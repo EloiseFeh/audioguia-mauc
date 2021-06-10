@@ -1,0 +1,31 @@
+.menuBar{
+    width: 100%;
+    background-color: rgb(245, 245, 245);
+    height: 10vh;
+    display: flex;
+    justify-content: space-around;
+    position: fixed;
+    bottom: 0;
+    align-items: center;
+}
+
+.menuItem{
+    color:#7f4c34 ;
+    width: 33%;
+    height: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    text-decoration: none !important;
+}
+
+.menuIcon{
+    font-size: 32px;
+}
+
+.menuTitle{
+    font-size: 16px;
+    
+}
