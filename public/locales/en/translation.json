@@ -1,0 +1,13 @@
+{
+    "PageTitle": {
+        "1": "Search Page"
+    },
+    "menuItem":{
+        "1": "Search",
+        "2": "About",
+        "3": "Contact"
+    },
+    "placeholderSearch":{
+        "1": "Enter Shell-work's name"
+      }
+}

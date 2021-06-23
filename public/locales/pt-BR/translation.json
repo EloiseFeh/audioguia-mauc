@@ -1,0 +1,14 @@
+{
+  "PageTitle": {
+    "1": "pagina de busca"
+  },
+  "menuItem":{
+    "1": "Busca",
+    "2": "Sobre",
+    "3": "Contato"
+  },
+  "placeholderSearch":{
+    "1": "Insira o nome da obra"
+  }
+  
+}

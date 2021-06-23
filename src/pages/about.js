@@ -1,6 +1,6 @@
 
 
-export default function Sobre(){
+export default function About(){
     return(
     <div>
         <h2>Sobre page</h2>
