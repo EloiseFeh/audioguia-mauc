@@ -1,24 +1,30 @@
 .menuBar{
-    width: 100%;
-    background-color: rgb(245, 245, 245);
-    height: 10vh;
+    width: 25%;
+    background-color:#104466;
+    border-radius: 27px;
+    height: 15%;
     display: flex;
+    flex-direction: column;
     justify-content: space-around;
-    position: fixed;
-    bottom: 0;
+    position: absolute;
+    left: 5%;
+    top: 12%;
     align-items: center;
+    padding: 1rem;
+    border: 1px solid white;
+    display: none;
 }
 
 .menuItem{
-    color:#7f4c34 ;
+    color : #FFFFFF;
     width: 33%;
     height: 100%;
     text-align: center;
     display: flex;
-    flex-direction: column;
     justify-content: space-around;
     align-items: center;
     text-decoration: none !important;
+    margin-bottom: 10px;
 }
 
 .menuIcon{

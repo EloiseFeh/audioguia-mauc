@@ -2,6 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './styles/global.css';
 import  Topbar  from './components/topbar';
+import Menu from './components/menu'
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import Language from './pages/language';
 import Search from './pages/search';

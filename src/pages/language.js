@@ -2,6 +2,7 @@ import React, {useState } from "react";
 import { useTranslation } from 'react-i18next';
 import i18next from 'i18next';
 import Topbar from '../components/topbar';
+import Menu from '../components/menu';
 import '../styles/language.css';
 
 function Language() {
@@ -16,7 +17,8 @@ function Language() {
     return (
       <div style={{ width: '100%'}}>
 
-        <Topbar/>
+       
+        
 
        <select clasName="selectLanguage" onChange={(e)=>{
            const selectedLanguage = e.target.value;

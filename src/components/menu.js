@@ -5,7 +5,7 @@ import {Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import i18next from 'i18next';
 
-export function Menu(){
+export default function Menu(){
     const { t } = useTranslation();
 
     function handleClick(lang) {
@@ -15,15 +15,12 @@ export function Menu(){
     return(
         <div className="menuBar">
             <Link to="/busca" className="menuItem">
-                <AiIcons.AiOutlineSearch className="menuIcon"/>
                 <span className="menuTitle">{t("menuItem.1")}</span>
             </Link>
             <Link to="/sobre" className="menuItem">
-                <AiIcons.AiOutlineInfoCircle className="menuIcon"/>
                 <span className="menuTitle">{t("menuItem.2")}</span>
             </Link>
             <Link to="/contato" className="menuItem">
-                <AiIcons.AiOutlineMessage className="menuIcon"/>
                 <span className="menuTitle">{t("menuItem.3")}</span>
             </Link>
         </div>
