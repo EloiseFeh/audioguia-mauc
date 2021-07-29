@@ -14,7 +14,7 @@ export function Menu(){
 
     return(
         <div className="menuBar">
-            <Link to="/" className="menuItem">
+            <Link to="/busca" className="menuItem">
                 <AiIcons.AiOutlineSearch className="menuIcon"/>
                 <span className="menuTitle">{t("menuItem.1")}</span>
             </Link>
