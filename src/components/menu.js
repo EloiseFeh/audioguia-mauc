@@ -1,6 +1,6 @@
 import '../styles/menu.css';
 import * as FaIcons from 'react-icons/fa';
-import *as AiIcons from "react-icons/ai";
+import * as AiIcons from "react-icons/ai";
 import {Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import i18next from 'i18next';

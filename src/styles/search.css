@@ -1,0 +1,15 @@
+.jwfbbd{
+    height: 51px !important;
+     width: 100%;
+     display: flex;
+    background-color: #104466;
+    color: #ffffff !important;
+    border: 1px solid white !important;
+    border-radius: 30px !important;
+    padding: 0 1rem !important;
+}
+
+.react-search-box-dropdown-list-item{
+    background-color: #104466 !important;
+    color: #ffffff !important;
+}

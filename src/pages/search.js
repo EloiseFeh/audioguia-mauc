@@ -18,8 +18,7 @@ export default function Search(){
   
     return(
     <div>
-        <div className="container">
-          <h2>{t("PageTitle.1")}</h2>
+        <div className="container" style={{marginTop: '15vh'}}>
 
           <div className="search-box" >
             <ReactSearchBox
@@ -28,6 +27,7 @@ export default function Search(){
               data = { Information }
               callback = {record => console.log(record)}
               onSelect = { (event) => handleClickAudio(event) }
+              style={{}}
             />
           </div>
 

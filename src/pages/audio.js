@@ -10,7 +10,7 @@ export default function Player() {
   const { state } = useLocation();
 
   return (
-    <div className="container">
+    <div className="container" style={{marginTop: '15vh'}}>
       <div className="audioContainer">
         <div className="coverContainer"></div>
 

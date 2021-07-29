@@ -18,7 +18,7 @@
 }
 
 .rhap_container {
-    background-color: #ea9911 !important;
+    background:none !important;
     box-shadow: none !important;
   }
 
@@ -29,7 +29,7 @@
   .rhap_main-controls-button,
   .rhap_volume-button,
   .rhap_repeat-button {
-    color: #7f4c34 !important;
+    color: #ffffff !important;
   }
   
   .rhap_time {
