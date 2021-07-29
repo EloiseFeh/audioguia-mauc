@@ -1,0 +1,50 @@
+.audioContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-top: 20%;
+    align-items: center;
+}
+
+.coverContainer{
+    width: 165px;
+    height: 165px;
+    background-color: lightgray;
+}
+
+.audioInfo{
+    margin: 5vh 10vw 0;
+    
+}
+
+.rhap_container {
+    background-color: #ea9911 !important;
+    box-shadow: none !important;
+  }
+
+  .rhap_controls-section{
+    margin: 0 auto;
+  }
+  
+  .rhap_main-controls-button,
+  .rhap_volume-button,
+  .rhap_repeat-button {
+    color: #7f4c34 !important;
+  }
+  
+  .rhap_time {
+    color: #ffffff !important;
+  }
+  
+  .rhap_volume-container,
+  .rhap_additional-controls{
+      display: none !important;
+  }
+  .rhap_progress-indicator {
+    background-color: #ffffff !important;
+  }
+  
+  .rhap_progress-filled {
+    background-color: #7f4c34 !important;
+  }
+  
