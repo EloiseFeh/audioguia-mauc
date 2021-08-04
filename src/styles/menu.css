@@ -12,7 +12,7 @@
     align-items: center;
     padding: 1rem;
     border: 1px solid white;
-    display: none;
+    transform: 0.3s;
 }
 
 .menuItem{
@@ -24,7 +24,6 @@
     justify-content: space-around;
     align-items: center;
     text-decoration: none !important;
-    margin-bottom: 10px;
 }
 
 .menuIcon{

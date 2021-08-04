@@ -20,7 +20,7 @@ function Language() {
        
         
 
-       <select clasName="selectLanguage" onChange={(e)=>{
+       <select className="selectLanguage" onChange={(e)=>{
            const selectedLanguage = e.target.value;
            setLanguageState(selectedLanguage);
            handleClick(selectedLanguage);
@@ -34,6 +34,8 @@ function Language() {
           <option value="pt-BR">Português</option>
           <option value="es">Espanol</option>
         </select>
+
+        <p>{languageState}</p>
         
         
 
