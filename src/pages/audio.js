@@ -10,24 +10,23 @@ export default function Player() {
   const { state } = useLocation();
 
   return (
-    <div className="container" style={{marginTop: '15vh'}}>
+    <div className="container" style={{ marginTop: '15vh' }}>
       <div className="audioContainer">
-        <div className="coverContainer"></div>
+          <img src={state.item.image} className="coverContainer"></img>
 
         <h1>{state.item.nome}</h1>
         <AudioPlayer
           className="audioPlayer"
           src={
-            process.env.PUBLIC_URL + "/audios/" + `${state.item.key}` + ".mp3"
+            state.item.audio_description_pt
           }
           onPlay={(e) => console.log("onPlay")}
         />
       </div>
-      
+
       <div className="audioInfo">
-          <h3>Nome da Obra</h3>
-          <h3>Nome do autor</h3>
-          <p>O idioma da descrição deve mudar de acordo com a linguagem escolhida</p>
+        <h3>{state.item.name}</h3>
+        <h3>{state.item.author}</h3>
       </div>
 
     </div>
