@@ -13,6 +13,7 @@ import { fetchGuides } from '../api';
 export default function Search() {
   const [Information, setInformation] = useState([]);
   const [initialized, setInitialized] = useState(false);
+  const [endFetching, setEndFetching] = useState(false);
 
   function treatArrayToSearchBox(arr) {
     arr = arr.map(item => {
@@ -27,6 +28,7 @@ export default function Search() {
     await fetchGuides()
       .then(res => treatArrayToSearchBox(res))
       .then(arr => setInformation(arr))
+    await setTimeout(()=>{setEndFetching(true)},0)
   }
 
   useEffect(() => {
@@ -44,22 +46,29 @@ export default function Search() {
 
   const { t } = useTranslation();
 
-  return (
-    <div>
-      <div className="container" style={{ marginTop: '15vh' }}>
-        <p> hello world</p>
-        <div className="search-box" >
-          <ReactSearchBox
-            placeholder={t("placeholderSearch.1")}
-            value=""
-            data={Information}
-            callback={record => console.log(record)}
-            onSelect={(event) => handleClickAudio(event)}
-            style={{}}
-          />
+  if(endFetching){
+    return (
+      <div>
+        <div className="container" style={{ marginTop: '15vh' }}>
+            <div className="search-box" >
+              <ReactSearchBox
+                placeholder={t("placeholderSearch.1")}
+                value=""
+                data={Information}
+                callback={record => console.log(record)}
+                onSelect={(event) => handleClickAudio(event)}
+                style={{}}
+              />
+            </div>
         </div>
       </div>
-
-    </div>
-  )
+    )
+  }
+  else{
+    return(
+      <div className="center" style={{ marginTop: '15vh' }}>
+        <i className="fas fa-spinner fa-spin" />
+      </div>
+    )
+  }
 }
